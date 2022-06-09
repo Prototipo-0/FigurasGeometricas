@@ -1,0 +1,52 @@
+main{
+    width: 100%;
+    position: relative;
+    margin-top: 70px;
+}
+main .ejercicios{
+    width: 1300px;
+    height: 180px;
+    margin: 50px auto;
+    border: 2px solid #ffffff;
+    display: flex;
+    background: #934141;
+    text-align: center;
+
+}
+main button{
+    text-align: center;
+    border: #ffffff;
+    color: #000000;
+    transition: 0.5s;
+    margin: 20px;
+    margin-top: 50px;
+    padding: 10px 15px;
+
+}
+main .ejercicios #fecha{
+    width: 20%;
+    color: #ffffff;
+    border-left: #000000;
+}
+main .ejercicios #imprimir{
+    width: 20%;
+    color: #ffffff;
+}
+main .ejercicios #salidaDatos{
+    width: 20%;
+    color: #ffffff;
+}
+main .ejercicios #imagenCambio{
+    width: 20%;
+    margin-top: 50px;
+    color: #ffffff;
+}
+main .ejercicios #cuidadInner{
+    width: 20%;
+    color: #ffffff;
+}
+#cuidadInner p{
+    width: 20%;
+    color: #ffffff;
+    position: relative;
+}

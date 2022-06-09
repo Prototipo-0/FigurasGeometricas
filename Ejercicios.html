@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios</title>
+    <link rel="stylesheet" href="css/styleIndex.css">
+    <link rel="stylesheet" href="css/styleEjercicios.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="FigurasGeometricas.html">Figuras Geometricas</a></li>
+                    <li><a href="Ejercicios.html">Ejercios</a></li>
+                    <li><a href="capturarDatos.html">Avatar</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+
+        <div class="ejercicios">
+
+            <div id="fecha">
+                <button onclick="displayDate()">¿Qué hora es?</button>
+                    <script>
+                    function displayDate() {
+                    document.getElementById("demo").innerHTML = Date();
+                    }
+                    </script>
+                    <p id="demo"></p>
+            </div>
+
+            <div id="imprimir">
+                <button onclick="window.print()">Imprimir página</button>
+            </div>
+
+            <div id="salidaDatos"><button type="button" onclick="myFunction()">Tocame</button>
+
+                <p id="demo1"></p>
+                <p id="demo2"></p>
+                
+                <script>
+                function myFunction() {
+                    let nombre = prompt("¿Cuál es su nombre?");
+                    document.getElementById("demo1").innerHTML = "Hola " + nombre;
+                    document.getElementById("demo2").innerHTML = "¿Comó está?";
+                }
+                </script>
+                </div>
+            
+            <div id="imagenCambio">
+                <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="img/smiley.gif" alt="Smiley" width="32" height="32">
+
+                <p>¡Pase el pulsor por la imagen!</p>
+                
+
+                <script>
+                function bigImg(x) {
+                x.style.height = "64px";
+                x.style.width = "64px";
+                }
+
+                function normalImg(x) {
+                x.style.height = "32px";
+                x.style.width = "32px";
+                }
+                </script>
+            </div>
+
+            <div id="cuidadInner">
+                <button onclick="Cuidad()">Cuidad</button>
+                <p id="demo"></p>
+                <script>
+                function Cuidad(){
+                let a = prompt("¿Dondé vive?");
+                document.getElementById("demo").innerHTML = a;
+                }
+                </script>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

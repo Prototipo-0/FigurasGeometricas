@@ -1,0 +1,95 @@
+*{ /* * Es todo */
+    margin: 0; /*Margen externa*/
+    padding: 0; /*Margen interna*/
+    box-sizing: border-box; /*Box-sizing        Sirve para que la margen la tome adentro, no se excede de lo establecido.*/
+}
+.fila{
+    display: flex;
+    width: 1200px;
+    margin: 50px auto;
+}
+.fila .contForm{
+    width: 50%;
+    background: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 40px;    
+}
+.fila .contForm h2{
+    font-size: 35px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+.fila .contForm p{
+    font-size: 25px;
+    color: #4a4333;
+    margin-bottom: 30px;
+}
+.contForm form .formGroup{
+    padding: 10px 50px;
+    text-align: left;
+}
+form .formGroup label{
+    display: block;
+    font-size: 16px;
+}
+form .formGroup input,
+form .formGroup select,
+form .formGroup textarea{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+form button{
+    background: #000000;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 12px 40px;
+    margin-top: 30px;
+/*Puntero en manita*/
+    cursor: pointer; 
+    transition: .5s;
+}
+/*Hover es la animación o acción de la transition*/
+form button:hover{
+    padding: 12px 60px;
+}
+.fila .contAvatar{
+    width: 50%;
+    padding: 40px;
+    text-align: center;
+    background: #efefef;
+}
+.contAvatar img{
+    width: 250px;
+}
+.contAvatar h3{
+    font-size: 25px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+.contAvatar p{
+    font-size: 25px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+#contAvatar.Gris{
+    background: #645c5c;
+}
+#contAvatar.Blanco{
+    background: #ffffff;
+    color: #000000;
+}
+#contAvatar.Azul{
+    background: #2c35d6;
+    color: #000000;
+}
+#contAvatar.Rojo{
+    background: #d00c0c;
+    color: #000000;
+}
+#contAvatar.Amarillo{
+    background: #e6db12;
+    color: #000000;
+}
